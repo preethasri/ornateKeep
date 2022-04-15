@@ -6,9 +6,12 @@ const SignInHandler =async({email,password})=>{
             email,
             password,
         })
+        console.log(response)
         return response.data
-    }catch(error){
-        console.log(error);
+        
+    }
+    catch(error){
+        console.log(error.message);
     }
 }
 export {SignInHandler}

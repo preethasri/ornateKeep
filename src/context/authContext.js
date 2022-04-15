@@ -1,11 +1,11 @@
 import { createContext,useContext,useState } from "react"
 
-const AuthContext=createContext();
+const AuthContext=createContext(null);
 
 const AuthProvider=({children})=>{
     const [auth,setAuth]=useState({
         user:localStorage.getItem("user"),
-        status:localStorage.getItem("authToken") ? true :false,
+        status:localStorage.getItem("authToken") ? true : false,
         authToken:localStorage.getItem("authToken"),
     })
     return (
@@ -15,13 +15,7 @@ const AuthProvider=({children})=>{
     )
 } 
 
-const useAuth = () => {
-    const context = useContext(AuthContext);
+const useAuth = () =>  useContext(AuthContext)
   
-    if (context === undefined) {
-      throw new Error("Auth context error");
-    }
-    return context;
-  };
 
 export {useAuth,AuthProvider}

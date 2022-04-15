@@ -2,27 +2,27 @@ import "./loginpage.css"
 import {useState} from 'react'
 import { useNavigate ,Link} from "react-router-dom"
 import {SignInHandler} from '../../../services/authservices/loginService'
-import {useAuth} from '../../../context/authContext'
+import {useAuth} from '../../../context/index'
 
 
 const LoginPage=()=>{
     const navigate=useNavigate();
-    const {setAuth}=useAuth();
+    const { setAuth}=useAuth();
     const [userLogged,setUserLogged]=useState({
         email:"",
         password:"",
     })
     const loginHandler=async(userLogged)=>{
-        const response=await SignInHandler(userLogged);
+        const data=await SignInHandler(userLogged);
         setAuth((auth)=>({
             ...auth,
-            user:response.foundUser.firstName,
-            status:true,
-           authToken:response.encodedToken,
+            user: data.foundUser.firstName,
+            status: true,
+            authToken: data.encodedToken,
         }))
-        localStorage.setItem("user",response.foundUser.firstName)
-        localStorage.setItem("authToken",response.encodedToken)
-        navigate("/")
+        localStorage.setItem("user",data.foundUser.firstName)
+        localStorage.setItem("authToken",data.encodedToken)
+        navigate("/notespage")
     }
     return(
         <div>

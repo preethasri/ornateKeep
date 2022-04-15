@@ -23,7 +23,7 @@ const SignUpPage=()=>{
         }));
         localStorage.setItem("user",response.createdUser.firstName)
         localStorage.setItem("authToken",response.encodedToken,)
-        navigate("/")
+        navigate("/notespage")
     }
 
     return(
