@@ -1,6 +1,6 @@
 *{
-    --nav-bg:#EFFFFD;
-    --secondary-color:#f1f1f1;
+    
+    --secondary-color:#B5DEFF;
     --primary-color:#4D96FF;
 }
 
@@ -15,7 +15,7 @@
     display:flex;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index:9;
-    background-color:var(--secondary-color);
+    background-color:#f1f1f1;
 
 }
 .sidebar-container.hide{
@@ -41,12 +41,11 @@
     display:flex;
 
 }
+
 .sidebar-items:hover{
-    background-color:blue;
+    background-color:var(--secondary-color);
 }
-.sidebar-items.active{
-    background-color:cornflowerblue;
-}
+
 .sidebar-arrow{
     position:fixed;
     top:13px;
