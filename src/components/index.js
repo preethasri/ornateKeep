@@ -1,2 +1,5 @@
 export {Navbar} from './navbar/navbar'
 export {Sidebar} from './sidebar/sidebar'
+export {ReactQuillEditor} from './ReactQuillEditor/ReactQuillEditor'
+export {ToggleTheme} from './toggleTheme/toggleTheme'
+export {CreateNote} from './createNote/createNote'

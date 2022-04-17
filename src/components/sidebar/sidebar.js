@@ -17,24 +17,21 @@ const Sidebar=()=>{
                 <span className="material-icons-outlined" onClick={()=>setIsSideBar(!isSidebar)}>{isSidebar ? "close" :"menu"}</span>
 
                 </div>
-                <NavLink to="/notesPage"  activeClassName={({isActive})=> isActive ? "sidebar-items active" :"sidebar-items"}>
-                <span class="material-icons-outlined">note_add</span>
-                <span>Notes</span>
+                <NavLink to="/notesPage"  className= "sidebar-items active">
+                <span className="material-icons-outlined">note_add</span>
+                <span className="sidebar-items">Notes</span>
                 </NavLink>
-                <NavLink to="/labels" activeClassName={({isActive})=>isActive ?"sidebar-items active" :"sidebar-items"}>
-                <span class="material-icons-outlined">label</span>
-                <span>Label</span>
+                <NavLink to="/labels" className="sidebar-items active">
+                <span className="material-icons-outlined">label</span>
+                <span className="sidebar-items">Label</span>
                 </NavLink>
-                <NavLink to="/archive" activeClassName={({isActive})=>
-                isActive ? "sidebar-items active" :"sidebar-items"}>
-                    <span class="material-icons-outlined">archive</span>
-                   <span>Archieve</span>
+                <NavLink to="/archive" className="sidebar-items active">
+                    <span className="material-icons-outlined">archive</span>
+                   <span className="sidebar-items">Archieve</span>
                 </NavLink>
-                <NavLink to="/trash" activeClassName={({isActive})=>{
-                    isActive ? "sidebar-items active" :"sidebar-items"
-                }}>
-                    <span class="material-icons-outlined">delete</span>
-                    <span>Trash</span>
+                <NavLink to="/trash" className= "sidebar-items active" >
+                    <span className="material-icons-outlined">delete</span>
+                    <span className="sidebar-items">Trash</span>
                 </NavLink>
             </div>
 
