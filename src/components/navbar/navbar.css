@@ -55,6 +55,7 @@
     
     
 }
+
 .nav-item{
     display: flex;
     flex-direction: column;
@@ -63,7 +64,7 @@
     
 }
 .nav-item span{
-    color:black;
+    color:var(--nav-text-color);
 }
 
 .login-btn{
@@ -72,8 +73,7 @@
     margin-left: 20px;
     border:none;
     padding:10px;
-    background-color: #b92b40;
-    color:white;
+  
 }
 .logout-icon{
     all:unset;

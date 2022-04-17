@@ -1,8 +1,4 @@
-*{
-    
-    --secondary-color:#B5DEFF;
-    --primary-color:#4D96FF;
-}
+
 
 .sidebar-container {
     position:fixed;
@@ -15,7 +11,9 @@
     display:flex;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index:9;
-    background-color:#f1f1f1;
+
+    background-color:var(--nav-bg);
+
 
 }
 .sidebar-container.hide{
@@ -57,5 +55,8 @@
     border-radius:50%;
     transition:0.3s ease;
     background-color: var(--secondary-color);
+    color:black;
+}
+.sidebar-arrow span{
     color:black;
 }

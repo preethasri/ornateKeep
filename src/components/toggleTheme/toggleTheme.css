@@ -1,0 +1,16 @@
+.dark-night{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 0.5rem;
+    margin:auto 0.5rem;
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    border-radius:50%;
+    background-color:var(--primary-body-color);
+    color:var(--nav-text-color);
+}    
+#nav-light-theme-icon{
+    color:black;
+}

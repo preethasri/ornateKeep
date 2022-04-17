@@ -1,5 +1,5 @@
 import "./navbar.css"
-
+import {ToggleTheme} from '../toggleTheme/toggleTheme'
 const Navbar=()=>
 {
     return(
@@ -17,14 +17,11 @@ const Navbar=()=>
                 
                 <div className='navbar-right'>
 
-                <div className="nav-item">
-                 <div className="toggle-theme">
-                 <span class="material-icons-outlined">light_mode</span>
-               </div>
-                </div>
+                   <ToggleTheme />
+                
                    <div className="nav-item">
                         <div>
-                        <span class="material-icons-outlined">login</span>
+                        <span className="material-icons-outlined">login</span>
                         </div>
                         
                     </div>

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
-import {AuthProvider,ThemeProvider} from './context/index'
+import {AuthProvider,ThemeProvider,NoteProvider} from './context/index'
 import {BrowserRouter} from 'react-router-dom'
 
 
@@ -15,9 +15,10 @@ ReactDOM.render(
     <BrowserRouter>
       <ThemeProvider>
         <AuthProvider>
+          <NoteProvider>
     
             <App />
-        
+        </NoteProvider>
         </AuthProvider>
       </ThemeProvider>
     </BrowserRouter>
