@@ -17,6 +17,7 @@ const Sidebar=()=>{
                 <span className="material-icons-outlined" onClick={()=>setIsSideBar(!isSidebar)}>{isSidebar ? "close" :"menu"}</span>
 
                 </div>
+
                 <NavLink to="/notesPage"  className= "sidebar-items active">
                 <span className="material-icons-outlined">note_add</span>
                 <span className="sidebar-items">Notes</span>
@@ -31,6 +32,7 @@ const Sidebar=()=>{
                 </NavLink>
                 <NavLink to="/trash" className= "sidebar-items active" >
                     <span className="material-icons-outlined">delete</span>
+
                     <span className="sidebar-items">Trash</span>
                 </NavLink>
             </div>
