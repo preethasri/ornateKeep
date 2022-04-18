@@ -1,0 +1,42 @@
+.show-label{
+    font-size: 2rem;
+    background: transparent;
+    border:none;
+    display: flex;
+    align-items:center;
+    cursor:pointer;
+
+}
+.label-div{
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    padding:0.4rem;
+    gap:0.4rem;
+    border-radius:5px;
+    border:1px solid var(--highlight-color);
+    background-color: var(--secondary-color);
+
+}
+.label-div.label-hide{
+    display:none;
+}
+.label-div > *{
+    color:black;
+}
+.label-box{
+    display:flex;
+    align-items:center;
+    cursor:pointer
+}
+.label-input{
+    padding:5px;
+    border:1px solid vat(--text-color);
+}
+.add-label{
+    border:1px solid var(--text-color);
+}
+.label-tag-input{
+    border:none;
+}
