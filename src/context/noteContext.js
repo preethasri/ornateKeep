@@ -5,12 +5,13 @@ const NoteContext=createContext();
 
 const NoteProvider=({children})=>{
     const initialNote={
+        noteInTrash:false,
         noteTitle:"",
         noteDesc:"",
         notePinned:false,
         noteColor:"default",
         tags:[],
-        noteInTrash:false,
+       
     }
     const [noteState,dispatchNote]=useReducer(noteReducer,initialNote)
    const [noteList,setNoteList]=useState([])

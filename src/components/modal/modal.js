@@ -1,13 +1,13 @@
 import {useState} from 'react';
 import "./modal.css"
 import { Labels,Pallete,ReactQuillEditor } from '../index';
-
+import {useNote,useAuth} from '../../context/index'
 const Modal=({currentNote,setIsModal,isModal,updatedNote,setUpdatedNote})=>{
     const {updateNoteHandler}=useNote();
     const {auth:{authToken},}=useAuth();
     const [isLabel,setIsLabel]=useState(false);
     const [isPallete,setIsPallete]=useState(false);
-    const {_id}=currentNote();
+    const {_id}=currentNote;
 
     return(
         <div className='update-note-container'>
@@ -41,7 +41,7 @@ const Modal=({currentNote,setIsModal,isModal,updatedNote,setUpdatedNote})=>{
                 )}
                 <div className='bottom-section'>
                     <div className='bottom-list'>
-                        <span className={updatedNote.isPinned ?("material-icons pin-note"):('material-icons-oultlined pin-note')} onClick={()=>{
+                        <span className={updatedNote.notePinned ?("material-icons pin-note"):("material-icons-outlined pin-note")} onClick={()=>{
                             setUpdatedNote({...updatedNote,notePinned:!updatedNote.notePinned})
                         }}>push_pin</span>
                         <Labels isModal={isModal} setUpdatedNote={setUpdatedNote} isLabel={isLabel} setIsLabel={setIsLabel} setISPallete={setIsPallete} />

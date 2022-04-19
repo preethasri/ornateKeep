@@ -1,0 +1,23 @@
+.filter-tags-container{
+    display: flex;
+    margin-bottom:1rem;
+}
+.tag-btn{
+    list-style: none;
+    margin:0.5rem;
+    padding:8px 10px;
+    border-radius:10px;
+    border:1px solid var(--text-color);
+}
+.tag-btn label{
+    cursor:pointer;
+    
+}
+.tag-btn input{
+    accent-color: var(--primar-color);
+    margin-right: 5px;
+        
+}
+.notes-container h3{
+    text-align:center;
+}

@@ -13,7 +13,7 @@ const LandingPage=()=>{
                 <div className="landingpage-info">
                     <span className="Brand-name">Ornate Keep</span>
                     <p className="info-para">A simple Note-app,where you can take notes for your day to day activity</p>
-                   <Link to="/notespage">
+                   <Link to="/notespage" className='link-tag'>
                        <button className="go-to-notes-btn">Go To Notes</button>
                    </Link>
                    
