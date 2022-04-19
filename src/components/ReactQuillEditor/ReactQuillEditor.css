@@ -1,5 +1,7 @@
 .react-quill{
     max-width:450px;
+    color:var(--text-color);
+   
 }
 .ql-editor.ql-blank::before{
     color:var(--primary-color);
@@ -7,15 +9,15 @@
 }
 
 .ql-snow .ql-picker{
-    color:var(--highlight-color);
+    color:var(--text-color);
 }
 .ql-snow .ql-stroke{
     fill:none;
-    stroke:var(--highlight-color);
+    stroke:var(--text-color);
 }
 
 .ql-snow .ql-fill,.ql-snow .ql-stroke.ql-fill{
-    fill:var(--highlight-color)
+    fill:var(--text-color)
 }
 .ql-snow.ql-toolbar{
     border:none;

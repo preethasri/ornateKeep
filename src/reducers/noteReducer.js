@@ -8,6 +8,17 @@ const noteReducer=(state,action)=>{
 
         case "IS_PINNED":
             return {...state,notePinned:!state.notePinned}
+        case "NOTE_COLOR":
+            return {...state,noteColor:action.payload};
+        
+        case  "ADD_TAG":
+            if(action.payload==="" ||state.tags.includes(action.payload)){
+                alert("tag already existed or Field is empty")
+                return {...state,tags:state.tags}
+            }
+            else{
+                return {...state,tags:[...state.tags,action.payload]};
+            }
         
         case "RMV_TAG":
             return{

@@ -1,0 +1,41 @@
+.note{
+    max-width:100%;
+    min-width:150px;
+    border-radius:5px;
+    border:1px var(--text-color);
+    padding:0.5rem;
+    background-color: var(--body-bg-color);
+    color:var(--text-color);
+}
+.note >h3{
+    word-wrap:break-word;
+    word-break:break-all;
+    padding:0 0.5rem;
+    letter-spacing:0.1em;
+}
+
+.note-card-desc{
+    margin:0 1rem;
+    padding:0.3rem;
+    letter-spacing:0.07em;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+.note-card-desc p img{
+    width:100%;
+}
+
+.note .label-render{
+    margin:0.5rem;
+    font-size:12px;
+    justify-content: start;
+}
+.note .bottom-list{
+    margin-top:12px;
+    justify-content:start;
+}
+.delete-note,.edit-note{
+    font-size:1.8rem;
+    cursor:pointer;
+}

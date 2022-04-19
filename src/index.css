@@ -10,6 +10,13 @@
     --primary-color:#4D96FF;
     --secondary-color:#B5DEFF;
     --nav-bg:#f1f1f1;
+    --pink-color:#eec9d2;
+    --blue-color: #b3cde0;
+    --green-color:#dcedc1;
+    --brown-color:#f9caa7;
+    --violet-color:#eedbdb ;
+    --yellow-color:#fdf498;
+    --secondary-text-color:#303030;
   }
   body.light-mode{
      --body-bg-color:#FFFFFFF;
