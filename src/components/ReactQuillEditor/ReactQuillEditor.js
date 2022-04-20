@@ -15,6 +15,7 @@ const ReactQuillEditor=({value,setValue})=>{
            formats={formats}
            placeholder="Take a Note..."
            theme="snow"
+           
         />
 
     )

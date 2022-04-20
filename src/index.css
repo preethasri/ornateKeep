@@ -5,6 +5,7 @@
   margin:0;
   box-sizing:border-box;
   font-family: 'Akshar', sans-serif;
+  
   }
   :root{
     --primary-color:#4D96FF;
@@ -27,7 +28,7 @@
   }
   body.dark-mode{
     --body-bg-color:#333333;
-    --text-color:white;
+    --text-color:#FFFFFF;
     --highlight-color:#4D96FF;
     --nav-text-color:black;
   

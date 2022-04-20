@@ -22,7 +22,7 @@ const Sidebar=()=>{
                 <span className="material-icons-outlined">note_add</span>
                 <span className="sidebar-items">Notes</span>
                 </NavLink>
-                <NavLink to="/labels" className="sidebar-items active">
+                <NavLink to="/label" className="sidebar-items active">
                 <span className="material-icons-outlined">label</span>
                 <span className="sidebar-items">Label</span>
                 </NavLink>

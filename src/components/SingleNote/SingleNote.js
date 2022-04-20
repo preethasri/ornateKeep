@@ -9,7 +9,7 @@ const SingleNote=({note})=>{
   const {updateNoteHandler,addNoteToArchiveHandler}=useNote()
   const {auth:{authToken}}=useAuth();
   const {noteTitle,noteDesc,notePinned,noteColor,tags,_id,createdAt}=note;
-  const {isModal,setIsModal}=useState(false);
+  const [isModal,setIsModal]=useState(false);
   const [updatedNote,setUpdatedNote]=useState(note);
 
    return(
@@ -56,7 +56,9 @@ const SingleNote=({note})=>{
                     
                   </span>
                   <span className="material-icons-outlined archive-note" onClick={()=>{addNoteToArchiveHandler(_id,updatedNote,authToken)}}>archive</span>
-                  <span className="material-icons-outlined delete-note" onClick={()=>updateNoteHandler(_id,{...updatedNote,noteInTrash:true},authToken)}>delete_outline
+                  <span className="material-icons-outlined delete-note"  onClick={() =>updateNoteHandler(_id,{ ...updatedNote, noteInTrash: true },authToken
+              )
+            }>  delete_outline
                     
                   </span>
                   

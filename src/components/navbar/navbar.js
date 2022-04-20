@@ -1,16 +1,36 @@
 import "./navbar.css"
 import {ToggleTheme} from '../toggleTheme/toggleTheme'
-const Navbar=()=>
-{
+import { useNavigate, NavLink } from "react-router-dom"
+import { useAuth } from "../../context"
+
+const Navbar=()=>{
+const{auth,setAuth}=useAuth();
+const navigate=useNavigate()
+
+const logOutHandler=()=>{
+    localStorage.removeItem("user");
+    localStorage.removeItem("authToken");
+    setAuth((auth)=>({
+        ...auth,
+        user:"",
+        status:false,
+        authToken:null
+    }));
+    navigate("/")
+}
+
+
     return(
         <>
         <div className='navbar-container'>
             <div className='navbar-wrapper'>
                 <div className='navbar-left'>
                     <div className="nav-item">
-                    
-                      <div className='brand-name'>Ornate Keep</div>
+                    <NavLink to="/" className="link-tag">
+                    <div className='brand-name'>Ornate Keep</div>
                 
+                    </NavLink>
+                      
                     </div>
                    
                 </div>
@@ -18,13 +38,22 @@ const Navbar=()=>
                 <div className='navbar-right'>
 
                    <ToggleTheme />
-                
+                   
                    <div className="nav-item">
-                        <div>
-                        <span className="material-icons-outlined">login</span>
-                        </div>
-                        
-                    </div>
+                       {auth.status ?(
+                           <button onClick={logOutHandler}>
+                                <span className="material-icons-outlined">logout</span>
+                           </button>
+                          
+                       ):(
+                           <NavLink to="/login">
+                           <span className="material-icons-outlined">login</span>
+                           </NavLink>
+                       )}
+
+                   </div>
+                
+                   
                     
              </div>
             </div>
