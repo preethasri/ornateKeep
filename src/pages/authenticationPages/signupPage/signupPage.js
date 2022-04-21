@@ -13,8 +13,8 @@ const SignUpPage=()=>{
         password:"",
         confirmPassword:"",
     })
-    const signUpHandler= async(signUpInput)=>{
-        const response =await signUpHandler(signUpInput);
+    const handleSignUp= async(signUpInput)=>{
+        const response =await SignUpHandler(signUpInput);
         setAuth((auth)=>({
             ...auth,
             user:response.createdUser.firstName,
@@ -28,7 +28,7 @@ const SignUpPage=()=>{
 
     return(
         <div>
-         <form action="" onSubmit={(e)=>{e.preventDefault(); signUpHandler(signUpInput)}}>
+         <form action="" onSubmit={(e)=>{e.preventDefault(); handleSignUp(signUpInput)}}>
         <div id="user-form">
             <div className="sign-up-form">
                 <h2>Create Account</h2>
@@ -71,7 +71,7 @@ const SignUpPage=()=>{
         required />
          <span class="material-icons-outlined" id="toggle-password">visibility</span>
        </label>
-                <button className="sign-up">Continue
+                <button className="sign-up" type="submit">Continue
       </button>
             </div>
         </div>

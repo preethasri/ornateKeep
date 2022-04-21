@@ -1,5 +1,5 @@
 import './landingpage.css'
-import { Navbar } from "../../components/navbar/navbar"
+
 import { Link } from 'react-router-dom'
 const LandingPage=()=>{
     return(

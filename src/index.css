@@ -19,6 +19,10 @@
     --yellow-color:#fdf498;
     --secondary-text-color:#303030;
   }
+  ::placeholder{
+    color:var(--text-color);
+}
+
   body.light-mode{
      --body-bg-color:#FFFFFFF;
       --text-color:black;

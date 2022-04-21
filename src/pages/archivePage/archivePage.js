@@ -16,7 +16,7 @@ const ArchivePage=()=>{
             <div className='archive-page'>
                 <h3>Archived Notes</h3>
                 <MasonaryLayout>
-                    {archiveList.length >1 && (
+                    {archiveList.length >=1 && (
                         archiveList.map((note,i)=>{
                             const {noteColor,noteDesc,tags,noteTitle,_id}=note;
                             return(
