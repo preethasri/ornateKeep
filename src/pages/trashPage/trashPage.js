@@ -16,7 +16,7 @@ const TrashPage=()=>{
             <div className='trash-page'>
                 <h3>Trash Page</h3>
                 <MasonaryLayout>
-                    {noteList.length >1 && 
+                    {noteList.length >=1 && 
                     
                     (
                         noteList.map((note,i)=>{

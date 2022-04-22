@@ -4,9 +4,11 @@
    
 }
 .ql-editor.ql-blank::before{
-    color:var(--primary-color);
+    
     font-style:normal;
+    color:var(--text-color) !important;
 }
+
 
 .ql-snow .ql-picker{
     color:var(--text-color);
@@ -17,17 +19,20 @@
 }
 
 .ql-snow .ql-fill,.ql-snow .ql-stroke.ql-fill{
-    fill:var(--text-color)
+    fill:var(--text-color);
 }
 .ql-snow.ql-toolbar{
     border:none;
     border-bottom: 1px solid var(--text-color);
+    
 }
 .ql-container.ql-snow{
     border:none;
     margin-top:2.8rem;
     font-size:1rem;
+    
 }
+
 .ql-snow.ql-toolbar button:hover .ql-stroke{
     stroke:var(--primary-color);
 

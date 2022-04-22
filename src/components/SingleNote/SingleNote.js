@@ -26,7 +26,7 @@ const SingleNote=({note})=>{
                 <h3>{noteTitle}</h3>
                 <div className="note-card-desc" dangerouslySetInnerHTML={{__html: noteDesc}} />
                   {tags.length >0 && (
-                  <div className="label-render">
+                  <div className="label-render-div">
                     {tags.map((tag,i)=>{
                     return(
                     <div key={i} className="label">

@@ -13,20 +13,20 @@ const LoginPage=()=>{
         password:"",
     })
     const loginHandler=async(userLogged)=>{
-        const data=await SignInHandler(userLogged);
-        setAuth((auth)=>({
-            ...auth,
-            user: data.foundUser.firstName,
-            status: true,
-            authToken: data.encodedToken,
-        }))
-        localStorage.setItem("user",data.foundUser.firstName)
-        localStorage.setItem("authToken",data.encodedToken)
-        navigate("/notespage")
+        const data = await SignInHandler(userLogged);
+        setAuth((auth) => ({
+          ...auth,
+          user: data.foundUser.firstName,
+          status: true,
+          authToken: data.encodedToken,
+        }));
+        localStorage.setItem("user", data.foundUser.firstName);
+        localStorage.setItem("authToken", data.encodedToken);
+        navigate("/notespage");
     }
     return(
         <div>
-             <form action="" onSubmit={(e)=>{e.preventDefault(); loginHandler(userLogged)}}>
+             <form onSubmit={(e)=>{e.preventDefault(), loginHandler(userLogged)}}>
         <div id="user-login-form">
             <div id="login-form">
                 <h2>Sign-In</h2>
@@ -45,7 +45,7 @@ const LoginPage=()=>{
            required />
          </label>
          <div className="loginpage-btns">
-            <button className="sign-in-button">Login</button>
+            <button className="sign-in-button" type="submit">Login</button>
             <button className="login-as-guest-btn"
             onClick={(e)=>{e.preventDefault();
                 loginHandler({
