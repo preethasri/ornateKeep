@@ -26,10 +26,10 @@ const logOutHandler=()=>{
             <div className='navbar-wrapper'>
                 <div className='navbar-left'>
                     <div className="nav-item">
-                    <NavLink to="/" className="link-tag">
+        
                     <div className='brand-name'>Ornate Keep</div>
                 
-                    </NavLink>
+                    
                       
                     </div>
                    
