@@ -30,13 +30,7 @@
      --nav-text-color:black;
   
   }
-  body.dark-mode{
-    --body-bg-color:#333333;
-    --text-color:#FFFFFF;
-    --highlight-color:#4D96FF;
-    --nav-text-color:black;
   
-  }
   body{
     margin:0;
     background-color:var(--body-bg-color);
