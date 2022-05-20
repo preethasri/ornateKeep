@@ -1,5 +1,5 @@
 import "./navbar.css"
-import {ToggleTheme} from '../toggleTheme/toggleTheme'
+
 import { useNavigate, NavLink } from "react-router-dom"
 import { useAuth } from "../../context"
 
@@ -37,7 +37,7 @@ const logOutHandler=()=>{
                 
                 <div className='navbar-right'>
 
-                   <ToggleTheme />
+                
                    
                    <div className="nav-item">
                        {auth.status ?(
