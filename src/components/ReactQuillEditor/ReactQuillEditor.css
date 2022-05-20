@@ -39,6 +39,11 @@
 
 
 }
+.ql-snow.ql-toolbar button .ql-stroke{
+    stroke:black;
+
+
+}
 .ql-snow.ql-toolbar button.ql-active .ql-stroke{
     stroke:black;
 }
