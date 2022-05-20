@@ -1,6 +1,6 @@
 .react-quill{
     max-width:450px;
-    color:var(--text-color);
+    color:black;
    
 }
 .ql-editor.ql-blank::before{
@@ -24,6 +24,7 @@
 .ql-snow.ql-toolbar{
     border:none;
     border-bottom: 1px solid var(--text-color);
+    color:black;
     
 }
 .ql-container.ql-snow{
@@ -39,7 +40,7 @@
 
 }
 .ql-snow.ql-toolbar button.ql-active .ql-stroke{
-    stroke:var(--text-color);
+    stroke:black;
 }
 .ql-snow.ql-toolbar button:hover .ql-fill{
     fill:var(--text-color);

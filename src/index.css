@@ -17,7 +17,7 @@
     --brown-color:#f9caa7;
     --violet-color:#eedbdb ;
     --yellow-color:#fdf498;
-    --secondary-text-color:#303030;
+    --secondary-text-color:black;
   }
   ::placeholder{
     color:var(--text-color);
